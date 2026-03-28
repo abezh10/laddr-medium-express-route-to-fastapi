@@ -1,2 +1,12 @@
-// Legacy scaffold for the Express Route to FastAPI sample repo.
-export {};
+export const reportsRoute = {
+  path: "/reports",
+  method: "GET",
+};
+
+export function handleReports() {
+  return {
+    ok: true,
+    route: "reports",
+    message: "Starter route for Express Route to FastAPI",
+  };
+}
